@@ -24,4 +24,11 @@ $(document).ready(function(){
 		$(".Ryu-ready").show();
 	})
 
+	$(document).keydown(function(key){
+		if(key.which == 120){
+			alert("done!");
+		}
+	})
+
+
 })
