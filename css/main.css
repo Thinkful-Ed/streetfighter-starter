@@ -1,12 +1,17 @@
 body{
 	background-color: black;
 }
-
+div{
+	border: 2px solid chocolate;
+}
 .container{
 	margin-top: 8em;
 	padding-left: 5em;
 	background-color: white;
-	width: 100%;
+	/*width: 100%;*/
+	/*If the width is less than 1200px, users have to scroll*/
+	/*make sure the content has at least 1200px*/
+	min-width: 1200px; 
 	height: 35em;
 }
 
@@ -14,4 +19,17 @@ body{
 	float: left;
 	width: 659px;
 	height: 494px;
+
+}
+
+.Ryu-ready, .Ryu-throwing, .Ryu-cool{
+	display: none;
+}
+
+.hadouken{
+	float:left;
+	margin-top: 11em;
+	margin-left: 32em;
+	position: absolute;
+	display: none;
 }
