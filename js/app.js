@@ -28,8 +28,9 @@ $(document).ready(function(){
         if (e.keyCode==88) {
         	playHadoukenCool ();
         	$('.ryu-ready').hide();
+        	$('.ryu-still').hide();
             	$('.ryu-cool').show();
-            	$('.ryu-still').hide();
+            	
         }
     })
     .on('keyup', function(e){
