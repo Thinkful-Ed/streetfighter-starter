@@ -1,0 +1,103 @@
+body {
+  background: black;
+  font-family: 'Komika Axis';
+}
+
+@font-face{ 
+	font-family: 'Komika Axis';
+	src: url("../fonts/KOMIKAX_.ttf");
+}
+
+.main {
+  background-color: white;
+  margin-top: 110px;
+  padding-left: 100px;
+  padding-right: 100px;
+  min-width: 1200px;
+  height: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+.text {
+  float: right;
+  padding-right: 140px;
+}
+
+h1 {
+  font-size: 72px;
+  color: #F72525;
+  text-shadow: 1px 1px 2px #F25A5A;
+  letter-spacing: 4px;
+}
+
+p:nth-of-type(1) {
+  margin-top: 110px;
+}
+
+p {
+  font-size: 18px
+  color: #4D4D4D
+  letter-spacing: 1px;
+}
+
+span {
+  color: #F25A5A;
+  font-size: 20px;
+}
+
+.ryu {
+  float: left;
+  width: 659px;
+  height: 494px;
+}
+
+.ryu-still,
+.ryu-ready, 
+.ryu-throwing,
+.ryu-cool {
+  width: 659px;
+  height: 494px;
+}
+
+.ryu-ready, 
+.ryu-throwing,
+.ryu-cool {
+  display: none;
+} 
+
+.ryu-still {
+  background-image: url("../images/ryu-standing-still.png");
+}
+
+.ryu-ready {
+  background-image: url("../images/ryu-ready-position.gif");
+}
+
+.ryu-throwing {
+  background-image: url("../images/ryu-throwing-hadouken.png");
+}
+
+.ryu-cool {
+  background-image: url("../images/ryu-cool.gif")
+}
+  
+.ryu-ready, 
+.ryu-still, 
+.ryu-throwing,
+.ryu-cool,
+.hadouken {
+  background-repeat: no-repeat;
+}
+
+.hadouken {
+  background-image: url("../images/hadouken.gif");
+  width: 156px; 
+  height: 90px;
+  display: none;
+  float: left;
+  position: absolute;
+  top: 167px;
+  left: 520px;
+  z-index: 10;
+}
