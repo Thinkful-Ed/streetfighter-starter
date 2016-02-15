@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Streetfighter</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="main">
+		<div class="instructions">
+		    	<p><strong>Click</strong> on Ryu to make him throw a Hadouken.</p>
+				<p>Press and hold down the <strong>"x"</strong> key to make him strike his cool pose!</p> 
+		    </div>    
+			<div class="ryu">
+				<div class="ryu-still"></div>
+				<div class="ryu-ready"></div>
+				<div class="ryu-throwing"></div>
+			    <div class="ryu-cool"></div>
+			</div>
+			<div class="hadouken"></div>
+			<audio id="hadouken-sound" src="sound/hadouken.mp3"></audio>
+		    <audio id="hadouken-cool" src="sound/hadouken-cool.mp3"></audio>
+	</div>
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
