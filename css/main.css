@@ -1,0 +1,40 @@
+body {
+	background-color: black;
+}
+
+.main {
+	background-color: white;
+	margin-top: 110px;
+	padding-left: 100px;
+	min-width: 1200px;
+	height: 500px;
+	position: relative;
+	z-index: 1;
+}
+
+.ryu {
+	float: left;
+	width: 659px;
+	height: 494px;
+}
+
+.ryu-still, .ryu-ready, .ryu-throwing {
+	width: 659px;
+	height: 494px;
+}
+
+.ryu-ready, .ryu-throwing {
+	display: none;
+}
+
+.ryu-ready {
+	background-image: url(../images/ryu-ready-position.gif);
+}
+
+.ryu-still {
+	background-image: url(../images/ryu-standing-still.png);
+}
+
+.ryu-throwing {
+	background-image: url(../images/ryu-throwing-hadouden.png);
+}
