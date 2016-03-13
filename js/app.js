@@ -21,13 +21,13 @@ $(document).ready(function() {
     });
 
     //On mouse click trow hadouken
-	ryu.mousedown(function() {
+	$("body").mousedown(function() {
 		ryuReady.hide();
     	ryuThrowing.show();
     	ryuHadouken.show().animate({left: "+=530px"}, 400).fadeOut("fast");
     	hadoukenSound.play();
 	});
-	ryu.mouseup(function() {
+	$("body").mouseup(function() {
     	ryuReady.show();
     	ryuThrowing.hide();
     	ryuHadouken.hide().animate({left: "-=530px"}, 0);
