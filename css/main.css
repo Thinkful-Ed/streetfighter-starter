@@ -2,6 +2,16 @@ body {
 	background-color: black;
 }
 
+div {
+	border: 2px solid black;
+}
+
+p {
+	font-family: 'Architects Daughter', cursive;
+	font-size: 180%;
+	font-weight: bold;
+}
+
 .main {
 	background-color: white;
 	margin-top: 110px;
@@ -14,12 +24,12 @@ body {
 
 .ryu {
 	float: left;
-	width: 659px;
+	width: 550px;
 	height: 494px;
 }
 
 .ryu-still, .ryu-ready, .ryu-throwing, .ryu-cool {
-	width: 659px;
+	width: 550px;
 	height: 494px;
 }
 
@@ -57,6 +67,22 @@ body {
   top: 167px;
   left: 520px;
   float: left;
+}
+
+.throw {
+	width: 280px;
+	height: 200px;
+	float: right;
+	margin-right: 360px;
+	margin-top: 45px;
+}
+
+.cool-pose {
+	width: 300px;
+	height: 250px;
+	float: right;
+	margin-right: 80px;
+	margin-top: -60px;
 }
 
 
