@@ -5,9 +5,34 @@
 	<title>Streetfighter</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	
+	<div class="main">
+		<div id="ryu">
+			<div id="ryu-still"></div>
+			<div id="ryu-ready"></div>
+			<div id="ryu-throwing"></div>
+			<div id="ryu-cool"></div>
+		</div>
+		<div id="hadouken">
+		</div>
+
+		<div class="click"><p>Click on Ryu to make him throw a Hadouken.</p>
+			<p>Press and hold down the "x" key to make him strike his cool pose!</p>
+
+			</div>
+
+
+	</div>
+
+
+	<audio id="hadouken-sound" preload="auto">
+		<source src="sound/hadouken.mp3"></source>
+	</audio>
+	<audio id="cool-sound" preload="auto">
+		<source src="sound/epic.mp3"></source>
+	</audio>	
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
