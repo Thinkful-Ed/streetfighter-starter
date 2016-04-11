@@ -25,13 +25,15 @@ $(document).ready(function () {
             // ryu goes back to his ready position
         })
         .keydown(function (e) {
-            if (e.keyCode == 88) {
+           //we changed == to === to download....and it works now! and we also added .ryu-ready to hide
+            if (e.keyCode === 88) {
                 $('.ryu-still').hide();
                 $('.ryu-cool').show();
-            }
+                $('.ryu-ready').hide();
+            };
         })
         .keyup(function (e) {
-            if (e.keyCode == 88) {
+            if (e.keyCode === 88) {
                 $('.ryu-still').show();
                 $('.ryu-cool').hide();
             }
