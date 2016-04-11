@@ -20,3 +20,5 @@ $(document).ready(function () {
             // ryu goes back to his ready position
         });
 });
+
+//new comment
