@@ -21,4 +21,4 @@ $(document).ready(function () {
         });
 });
 
-// hadouken
+//Scott was here!
