@@ -24,11 +24,18 @@ $(document).ready(function() {
   	$('.ryu-ready').show();
   })
 
-  .keydown(function() {
-  	$('.ryu-ready').hide();
-  	$('ryu-cool').show();
-  });
+  $('body').keydown(function(event) {
+  	if (event.which == 88 ) {
+  		$('.ryu-ready').hide();
+  		$('.ryu-still').hide();
+  		$('.ryu-cool').show();
+  	}
+  })
 
+  $('body').keyup(function() {
+  		$('.ryu-still').show();
+  		$('.ryu-cool').hide();
+  });
 });
 
 function playHadouken() {
