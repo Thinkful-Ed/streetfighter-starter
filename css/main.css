@@ -5,12 +5,61 @@
 
 body {
 	background-color: red;
-	
+	font-family: 'Kanit', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	line-height: 175%;
 }
 
 section {
 	height: 100vh;
 	padding: 20px;
+}
+
+.character-info, .controls, .flag, .logo {
+	opacity: 0;
+}
+
+.logo {
+	margin-top: 125%;
+}
+
+h1 {
+	font-size: 175%;
+}
+
+h2 {
+	font-size: 110%;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	padding-left: 3em;
+	font-size: 9.5px;
+	font-weight: bold;
+	line-height: 150%;
+	vertical-align: center;
+	margin: 15px 0 15px;
+	background-image: url('../images/bullet.png');
+	background-repeat: no-repeat;
+	background-position: left;
+
+}	
+
+li:first-of-type{
+	max-width: 160px;
+}
+
+li:nth-of-type(2) {
+	max-width: 200px;
+}
+
+em {
+	font-weight: light;
 }
 
 .main {
@@ -22,14 +71,54 @@ section {
 	z-index: 1;
 	background-color: white;
 	align-items: center;
-	justify-content: center;
-	
+
 }
 
-.character-info {
-	max-width: 500px;
-	flex-basis: 1;
+.flag {
+	width: 35px;
+	height: 35px;
+	margin: 40px auto;
+	border-radius: 50%;
+	background-color: #d20000;
 }
+
+.left-column {
+	flex-basis: 1;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 40px;
+	padding-right: 100px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 100%;
+	background-image: url('../images/sf_logo.gif');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 130px;
+
+}
+
+
+dl, dt, dd {
+display: flex;
+font-size: 10.5px;
+font-weight: bold;
+}
+
+dt, dd {
+	flex-basis: calc(100% / 2);
+}
+
+dd {
+	-webkit-margin-start: 10px;
+}
+
 
 .hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
   background-repeat: no-repeat;
@@ -38,22 +127,25 @@ section {
 .ryu-container {
 	display: flex;
     flex-direction: row;
+    flex-basis: calc(100% / 2);
+    justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .ryu {
-    width: 659px;
     height: 494px;
-    flex-basis: 1;
+    overflow: hidden;
 
 }
 
 .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
-  width: 659px;
+  width: 400px;
   height: 494px;
+  background-position: center;
 }
 
-.ryu-throwing, .ryu-ready, .ryu-cool {
+.ryu-throwing, .ryu-ready, .ryu-cool, {
   display: none;
 } 
 
@@ -87,5 +179,5 @@ section {
   margin-top: -75px;
   margin-left: 0px;
   opacity: 0;
-  transform: translate(-130px,0);
+  transform: translate(-30px,0);
 }

@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+  $('.logo').animate({"opacity" : "1"},3000,function(){
+      $(this).animate({"margin-top" : "0px"},1200,function(){
+        $('.character-info').animate({'opacity' : '1'}),1200});
+      });
+
   function playHadouken () {
     $('#hadouken-sound')[0].volume = 0.7;
     $('#hadouken-sound')[0].load();
@@ -48,6 +53,7 @@ $(document).ready(function(){
         else {$('.ryu-still').show();};
       }
   });
+
 
 
 
