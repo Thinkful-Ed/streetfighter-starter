@@ -23,25 +23,26 @@ $(document).ready(function(){
         $('.ryu-throwing').hide();
         $('.ryu-ready').show();
     })
+});
 
+
+ $(document).ready(function() {
+   $('body').keydown(function(e) {
+        if(e.keyCode == 88) {
+          $('.ryu-still').hide();
+          $('.ryu-ready').hide();
+          $('.ryu-cool').show();
+        }
+    });
 
 });
 
-$(document).ready(function() {
-      $('body').keydown(function(e) {
-        if(e.keyCode == 88) {
-            $('.ryu-still').hide();
-            $('.ryu-cool').show();
-        }
-    })
-    .keyup(function(e) {
-      if(e.keyCode == 88) {
-        $('.ryu-cool').hide();
-        $('.ryu-still').show();
-      }
-    });
-})
-
+ $(document).ready(function(){
+  $('body').keyup(function() {
+      $('.ryu-cool').hide();
+      $('.ryu-ready').show();
+  });
+ });
 
 
 function playHadouken() {
