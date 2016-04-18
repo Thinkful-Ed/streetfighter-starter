@@ -59,3 +59,12 @@ body {
 	left: 520px;
 }
 
+.instructions {
+	font-weight: bold;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	font-size: 2em;
+	display: none;
+}
+

@@ -38,8 +38,7 @@ $(document).ready(function () {
                 $('.ryu-cool').hide();
             }
         });
-
-
+    
 });
 
 function playHadouken() {
@@ -47,4 +46,22 @@ function playHadouken() {
     $('#hadouken-sound')[0].load();
     $('#hadouken-sound')[0].play();
 };
-//Scott was here!
+
+/*function intro() {
+    $('.instructions').fadeIn(800);
+}
+*/
+$(document).ready(function(){ 
+function intro() {
+        $('.instructions').fadeIn(800);
+    }
+});
+
+
+
+
+
+
+
+
+
