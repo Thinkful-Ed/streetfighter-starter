@@ -12,6 +12,19 @@ body{
 	z-index: 1;
 }
 
+.explanation{
+	float: right;
+    height: 659px;
+    width: 494px;
+    margin-right: 200px;
+    margin-top: 45px;
+    font-size: 3em;
+    color: black;
+    font-family: 'Passion One', cursive;
+}
+
+
+
 .ryu{
 	float: left;
 	height: 659px;
