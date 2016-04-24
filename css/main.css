@@ -47,6 +47,7 @@ body{
   top: 160px;
   left:600px;
   float: left;
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+}
+ .hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
   background-repeat: no-repeat;
 }
