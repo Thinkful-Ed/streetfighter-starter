@@ -3,12 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Streetfighter</title>
+	<meta name="description" content="Street Fighter jQ Project">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	
-	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<div class="main">
+		<!-- Ryu Positions -->
+		<div class="ryu">
+			<div class="ryu-still mouse"></div>
+			<div class="ryu-ready mouse"></div>
+			<div class="ryu-throwing mouse"></div>
+			<div class="ryu-cool xkey"></div>
+		</div>
+		<!-- Hadouken Position -->
+		<div class="hadouken"></div>
+	</div>
+	<!-- Hadouken Sound Clip -->
+	<audio id="hadouken-sound" src="sound/hadouken.mp3">
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
 </html>
