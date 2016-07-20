@@ -111,7 +111,7 @@ function ryuCoolPose ()
 	 	if (e.keyCode==88) 
 	  	{
 	    	$('.xkey').hide();
-	    	$('.mouse').show();
+	    	$('.ryu-still').show();
 	  	}
 	})
 };
