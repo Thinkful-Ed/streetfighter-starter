@@ -21,6 +21,9 @@
 *		c)	ryuCoolPose
 *	3)	Sibling Functions
 *		a)	playHadouken
+*	4)	Introduction Function
+*	5)	Logo Animation
+*	6)	User Instruction Animation
 */
 // ########################################
 /* ---------- Parent Function ---------- */
@@ -29,6 +32,7 @@
 // All animation/sound for Ryu & hadouken.
 $(document).ready(function()
 {
+	startIntro();
 	ryuAction();
 });
 
@@ -129,4 +133,81 @@ function playHadouken ()
 	$('#hadouken-sound')[0].load();
 	$('#hadouken-sound')[0].play();
 };
+
+// ##############################################
+/* ---------- Introduction Function ---------- */
+// ##############################################
+
+function startIntro ()
+{
+	// logoAnimation();
+	userInstructions();
+};
+
+// ########################################
+/* ---------- Logo Animation ---------- */
+// ########################################
+
+// function logoAnimation ()
+// {
+// 	$('street-fighter').fadeIn(2500, function()
+// 	{
+// 		$('street-fighter').fadeOut(1000, function()
+// 		{
+// 			$('jquery').fadeIn(2500, function()
+// 			{
+// 				$('jquery').fadeOut(1000, function()
+// 				{
+
+// 				});
+// 			})
+// 		})
+// 	})
+	
+// };
+
+// ###################################################
+/* ---------- User Instruction Animation ---------- */
+// ###################################################
+
+function userInstructions ()
+{
+	console.log('instruct');
+	$(document).ready(function()
+	{
+		$('one').fadeIn(2500, function()
+		{
+			$('one').css('color', 'white');
+			$('one').fadeOut(1000, function()
+			{
+				$('one').css('color', 'black');
+				$('two').fadeIn(2500, function()
+				{
+					$('two').css('color', 'white');
+					$('two').fadeOut(1000, function()
+					{
+						$('two').css('color', 'black');
+						$('three').fadeIn(2500, function()
+						{
+							$('three').css('color', 'white');
+							$('three').fadeOut(1000, function()
+							{
+								$('three').css('color', 'black');
+							})
+						})
+					})
+				})
+			})
+		})
+	})
+		
+};
+
+	
+
+
+
+
+
+
 

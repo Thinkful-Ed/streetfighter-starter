@@ -6,6 +6,8 @@
 	1) Parent Elements
 	2) Ryu Positions
 	3) Hadouken Positions
+  4) Logos
+  5) Instructions for User  
 
 #########################################
 */
@@ -93,6 +95,62 @@ body
   left: 699px;
   float: left;
 }
+
+/*---------- Logos ----------*/
+
+/*.logos
+{
+  position: absolute;
+  left: 700px;
+  height: 425px;
+  width: 600px;
+  padding-top: 75px;
+}
+
+.street-fighter
+{
+  background-image: url('../images/street-fighter-logo.jpg');
+  height: 500px;
+  width: 600px;
+  display: none;
+}
+
+.jquery
+{
+  background-image: url('../images/jquery-logo.png');
+  height: 500px;
+  width: 600px;
+  display: none;
+}*/
+
+/*---------- Instructions for User ----------*/
+
+.caption-text
+{
+  float: left;
+  padding-left: 100px;
+}
+
+.one, .two, .three
+{
+  display: none;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
