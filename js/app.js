@@ -43,8 +43,8 @@ $(document).ready(function()
 /* ---------- a) ryuAction ---------- */
 function ryuAction ()
 {
-	ryuThrow();
-	ryuCoolPose();
+	ryuThrow(); 
+	ryuCoolPose(); 
 };
 
 /* ---------- b) ryuThrow ---------- */
@@ -56,14 +56,16 @@ function ryuThrow ()
  	$('.ryu').mouseenter(function() 
  	{
  		console.log('mouseenter');
-    	$('.ryu-still').hide();
+    	$('.mouse').hide();
+    	$('.xkey').hide();
     	$('.ryu-ready').show();
   	})
  	// User no longer mouseing over Ryu
   	.mouseleave(function() 
 	{
 		console.log('mouseleave');
-  		$('.ryu-ready').hide();
+  		$('.mouse').hide();
+  		$('.xkey').hide();
   		$('.ryu-still').show();
 	})
 
@@ -74,14 +76,14 @@ function ryuThrow ()
 	{
     console.log('mousedown');
   	 playHadouken();
-  	  $('.ryu-ready').hide();
+  	  $('.mouse').hide();
 		  $('.ryu-throwing').show();
 		  $('.hadouken').finish().show()
 		    .animate(
   		    {'left': '1020px'},
   		    500,
   		    function() 
-  	   	  {
+  	   	  	{
     			 $('.hadouken').hide();
     			 $('.hadouken').css('left', '520px');
   		    });
@@ -90,8 +92,8 @@ function ryuThrow ()
 	.mouseup(function() 
 	{
     console.log('mouseup');
-  	 $('.ryu-throwing').hide();
-		 $('.ryu-ready').show();
+  	 	$('.mouse').hide();
+		$('.ryu-still').show();
 	})
 };
 
@@ -115,6 +117,7 @@ function ryuCoolPose ()
 	 	if (e.keyCode==88) 
 	  	{
 	    	$('.xkey').hide();
+	    	$('.mouse').hide();
 	    	$('.ryu-still').show();
 	  	}
 	})
@@ -140,7 +143,13 @@ function playHadouken ()
 
 function startIntro ()
 {
-	// logoAnimation();
+	// I want to delay the running of userInstructions()
+	// so basically logoAnimation() will run
+	// then there will be a pause an userInstructions() will run.
+
+	logoAnimation();
+	console.log('delay');
+	$().delay(5000);
 	userInstructions();
 };
 
@@ -148,23 +157,50 @@ function startIntro ()
 /* ---------- Logo Animation ---------- */
 // ########################################
 
-// function logoAnimation ()
-// {
-// 	$('street-fighter').fadeIn(2500, function()
-// 	{
-// 		$('street-fighter').fadeOut(1000, function()
-// 		{
-// 			$('jquery').fadeIn(2500, function()
-// 			{
-// 				$('jquery').fadeOut(1000, function()
-// 				{
-
-// 				});
-// 			})
-// 		})
-// 	})
-	
-// };
+function logoAnimation ()
+{
+	console.log('sf-logo_fadeIn');
+	$('.street-fighter').fadeIn(2500, function()
+	{
+		console.log('sf-logo_fadeOut');
+		$('.street-fighter').fadeOut(1000, function()
+		{
+			console.log('text_fadeIn');
+			$('.text').fadeIn(2500, function()
+			{
+				console.log('text_fadeOut');
+				$('.text').fadeOut(1000, function()
+				{
+					console.log('disney_fadeIn');
+					$('.disney').fadeIn(2500, function()
+					{
+						console.log('disney_fadeOut');
+						$('.disney').fadeOut(1000, function()
+						{
+							console.log('text2_fadeIn');
+							$('.text2').fadeIn(2500, function()
+							{
+								console.log('text2_fadeOut');
+								$('.text2').fadeOut(1000, function()
+								{
+									console.log('jQ-logo_fadeIn');
+									$('.jquery').fadeIn(2500, function()
+									{
+										console.log('jQ-logo_fadeOut');
+										$('.jquery').fadeOut(1000, function()
+										{
+					
+										});
+									})
+								})
+							})
+						})
+					})
+				})
+			})
+		})
+	})	
+};
 
 // ###################################################
 /* ---------- User Instruction Animation ---------- */
@@ -175,36 +211,30 @@ function userInstructions ()
 	console.log('instruct');
 	$(document).ready(function()
 	{
-		$('one').fadeIn(2500, function()
+		console.log('fadeIn_one');
+		$('.one').delay(17000).fadeIn(2000, function()
 		{
-			$('one').css('color', 'white');
-			$('one').fadeOut(1000, function()
+			console.log('fadeIn_two');
+			$('.two').fadeIn(4000, function()
 			{
-				$('one').css('color', 'black');
-				$('two').fadeIn(2500, function()
+				console.log('fadeIn_three');
+				$('.three').fadeIn(4000);
+				console.log('fadeOut_one');
+				$('.one').fadeOut(3000, function()
 				{
-					$('two').css('color', 'white');
-					$('two').fadeOut(1000, function()
+					console.log('fadeOut_two');
+					$('.two').fadeOut(3000, function()
 					{
-						$('two').css('color', 'black');
-						$('three').fadeIn(2500, function()
-						{
-							$('three').css('color', 'white');
-							$('three').fadeOut(1000, function()
-							{
-								$('three').css('color', 'black');
-							})
-						})
+						console.log('fadeOut_three');
+						$('.three').fadeOut(3000);
 					})
 				})
 			})
+
+		
 		})
 	})
-		
-};
-
-	
-
+}
 
 
 

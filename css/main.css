@@ -32,10 +32,8 @@ body
 
 /*---------- Ryu Positions ----------*/
 
-.ryu
+.animation-container, .ryu
 {
-  width: 659px;
-  height: 494px;
   float: left;
 }
 
@@ -72,11 +70,10 @@ body
 
 .ryu-cool
 {
-  border: none;
   display: none;
 }
 
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing,
 {
   background-repeat: no-repeat;
 }
@@ -98,7 +95,7 @@ body
 
 /*---------- Logos ----------*/
 
-/*.logos
+.logos
 {
   position: absolute;
   left: 700px;
@@ -109,19 +106,88 @@ body
 
 .street-fighter
 {
-  background-image: url('../images/street-fighter-logo.jpg');
+  background-image: url('../images/Street_Fighter_Logo.png');
+  max-width: 100%;
+  max-height: 100%;
   height: 500px;
   width: 600px;
   display: none;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+
+}
+
+.disney
+{
+  background-image: url('../images/disney.gif');
+  max-width: 100%;
+  max-height: 100%;
+  height: 500px;
+  width: 600px;
+  display: none;
+  background-repeat: no-repeat;
+  margin-top: 50px;
 }
 
 .jquery
 {
   background-image: url('../images/jquery-logo.png');
+  max-width: 100%;
+  max-height: 100%;
   height: 500px;
   width: 600px;
   display: none;
-}*/
+  background-repeat: no-repeat;
+  margin-top: 50px;
+
+}
+
+@font-face 
+{
+    font-family: "My Custom Font";
+    src: url("../text/NewWalt1003.ttf") format("truetype");
+}
+
+@font-face
+{
+    font-family: "My Custom Font_2";
+    src: url("../text/streetcred.ttf") format("truetype");
+}
+
+.customfont 
+{ 
+    font-family: "My Custom Font", Verdana, Tahoma;
+}
+
+.customfont2 
+{ 
+    font-family: "My Custom Font_2", Verdana, Tahoma;
+}
+
+.text
+{
+  height: 500px;
+  width: 600px;
+  display: none;
+  background-repeat: no-repeat;
+  font-size: 500%;
+  font-weight: bold;
+  color: Dodgerblue;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.text2
+{
+  height: 500px;
+  width: 600px;
+  display: none;
+  background-repeat: no-repeat;
+  font-size: 500%;
+  font-weight: bold;
+  color: Dodgerblue;
+  text-align: center;
+}
 
 /*---------- Instructions for User ----------*/
 
@@ -131,10 +197,17 @@ body
   padding-left: 100px;
 }
 
+.caption-text ul
+{
+  list-style-type: none;
+}
+
 .one, .two, .three
 {
   display: none;
-  color: white;
+  color: Dodgerblue;
+  font-family: Georgia, Verdana;
+  font-size: 20px;
 }
 
 
