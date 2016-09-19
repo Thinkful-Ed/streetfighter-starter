@@ -6,7 +6,7 @@
 *	In my case the main program(function) is:
 *		$(document).ready(function()
 *		{
-*	
+*
 *		});
 ******************************************/
 
@@ -43,9 +43,9 @@ $(document).ready(function()
 /* ---------- a) ryuAction ---------- */
 function ryuAction ()
 {
-	ryuThrow(); 
-	ryuCoolPose(); 
-};
+	ryuThrow();
+	ryuCoolPose();
+}
 
 /* ---------- b) ryuThrow ---------- */
 
@@ -53,17 +53,15 @@ function ryuAction ()
 function ryuThrow ()
 {
 	// User mouseing over Ryu
- 	$('.ryu').mouseenter(function() 
+ 	$('.ryu').mouseenter(function()
  	{
- 		console.log('mouseenter');
     	$('.mouse').hide();
     	$('.xkey').hide();
     	$('.ryu-ready').show();
   	})
  	// User no longer mouseing over Ryu
-  	.mouseleave(function() 
+  	.mouseleave(function()
 	{
-		console.log('mouseleave');
   		$('.mouse').hide();
   		$('.xkey').hide();
   		$('.ryu-still').show();
@@ -72,9 +70,8 @@ function ryuThrow ()
 	// User input (mouse down/up) causes Ryu to throw hadouken.
 
 	// User holding mouse down over Ryu
-	.mousedown(function() 
+	.mousedown(function()
 	{
-    console.log('mousedown');
   	 playHadouken();
   	  $('.mouse').hide();
 		  $('.ryu-throwing').show();
@@ -82,20 +79,19 @@ function ryuThrow ()
 		    .animate(
   		    {'left': '1020px'},
   		    500,
-  		    function() 
+  		    function()
   	   	  	{
     			 $('.hadouken').hide();
     			 $('.hadouken').css('left', '520px');
   		    });
 	})
 	// User no longer holding mouse down over Ryu
-	.mouseup(function() 
+	.mouseup(function()
 	{
-    console.log('mouseup');
   	 	$('.mouse').hide();
 		$('.ryu-still').show();
-	})
-};
+	});
+}
 
 /* ---------- c) ryuCoolPose ---------- */
 
@@ -104,8 +100,7 @@ function ryuCoolPose ()
 {
 	$(document).keydown(function(e)
 	{
-  		console.log('keydown');
-  		if (e.keyCode==88) 
+  		if (e.keyCode==88)
 		{
 		    $('.mouse').hide();
 		    $('.xkey').show();
@@ -113,15 +108,14 @@ function ryuCoolPose ()
 	})
 	.keyup(function(e)
 	{
-		console.log('keyup');
-	 	if (e.keyCode==88) 
+	 	if (e.keyCode==88)
 	  	{
 	    	$('.xkey').hide();
 	    	$('.mouse').hide();
 	    	$('.ryu-still').show();
 	  	}
-	})
-};
+	});
+}
 
 // ########################################
 /* ---------- Sibling Functions ---------- */
@@ -130,12 +124,12 @@ function ryuCoolPose ()
 /* ---------- a) playHadouken ---------- */
 
 // Sound for hadouken
-function playHadouken () 
+function playHadouken ()
 {
 	$('#hadouken-sound')[0].volume = 0.5;
 	$('#hadouken-sound')[0].load();
 	$('#hadouken-sound')[0].play();
-};
+}
 
 // ##############################################
 /* ---------- Introduction Function ---------- */
@@ -148,10 +142,9 @@ function startIntro ()
 	// then there will be a pause an userInstructions() will run.
 
 	logoAnimation();
-	console.log('delay');
 	$().delay(5000);
 	userInstructions();
-};
+}
 
 // ########################################
 /* ---------- Logo Animation ---------- */
@@ -159,48 +152,38 @@ function startIntro ()
 
 function logoAnimation ()
 {
-	console.log('sf-logo_fadeIn');
 	$('.street-fighter').fadeIn(2500, function()
 	{
-		console.log('sf-logo_fadeOut');
 		$('.street-fighter').fadeOut(1000, function()
 		{
-			console.log('text_fadeIn');
 			$('.text').fadeIn(2500, function()
 			{
-				console.log('text_fadeOut');
 				$('.text').fadeOut(1000, function()
 				{
-					console.log('disney_fadeIn');
 					$('.disney').fadeIn(2500, function()
 					{
-						console.log('disney_fadeOut');
 						$('.disney').fadeOut(1000, function()
 						{
-							console.log('text2_fadeIn');
 							$('.text2').fadeIn(2500, function()
 							{
-								console.log('text2_fadeOut');
 								$('.text2').fadeOut(1000, function()
 								{
-									console.log('jQ-logo_fadeIn');
 									$('.jquery').fadeIn(2500, function()
 									{
-										console.log('jQ-logo_fadeOut');
 										$('.jquery').fadeOut(1000, function()
 										{
-					
+
 										});
-									})
-								})
-							})
-						})
-					})
-				})
-			})
-		})
-	})	
-};
+									});
+								});
+							});
+						});
+					});
+				});
+			});
+		});
+	});
+}
 
 // ###################################################
 /* ---------- User Instruction Animation ---------- */
@@ -208,36 +191,21 @@ function logoAnimation ()
 
 function userInstructions ()
 {
-	console.log('instruct');
 	$(document).ready(function()
 	{
-		console.log('fadeIn_one');
 		$('.one').delay(17000).fadeIn(2000, function()
 		{
-			console.log('fadeIn_two');
 			$('.two').fadeIn(4000, function()
 			{
-				console.log('fadeIn_three');
 				$('.three').fadeIn(4000);
-				console.log('fadeOut_one');
 				$('.one').fadeOut(3000, function()
 				{
-					console.log('fadeOut_two');
 					$('.two').fadeOut(3000, function()
 					{
-						console.log('fadeOut_three');
 						$('.three').fadeOut(3000);
-					})
-				})
-			})
-
-		
-		})
-	})
+					});
+				});
+			});
+		});
+	});
 }
-
-
-
-
-
-

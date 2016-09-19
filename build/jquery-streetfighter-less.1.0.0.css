@@ -1,0 +1,118 @@
+/*
+#########################################
+
+	Table of Contents
+  1) Imports
+  2) Variables
+	3) Parent Elements
+	4) Ryu Positions
+	5) Hadouken Positions
+  6) Logos
+  7) Instructions for User
+
+#########################################
+*/
+/*---------- Imports ----------*/
+@import 'assets/css/normalize.css';
+@import 'assets/css/main.css';
+/*---------- Variables ----------*/
+/*---------- Parent Elements ----------*/
+body {
+  background-color: black;
+}
+.main {
+  background-color: white;
+  height: 500px;
+  position: relative;
+}
+/*---------- Ryu Positions ----------*/
+.animation-container,
+.ryu {
+  float: left;
+}
+.disney,
+.hadouken,
+.jquery,
+.one,
+.ryu-cool,
+.ryu-ready,
+.ryu-throwing,
+.street-fighter,
+.text,
+.text2,
+.three,
+.two {
+  display: none;
+}
+.ryu-ready {
+  background-image: url('../images/ryu-ready-position.gif');
+}
+.ryu-still {
+  background-image: url('../images/ryu-standing_still.png');
+}
+.ryu-throwing {
+  background-image: url('../images/ryu-throwing-hadouken.png');
+}
+.ryu-cool {
+  background-image: url('../images/ryu-cool.gif');
+}
+.hadouken,
+.ryu-ready,
+.ryu-still,
+.ryu-throwing {
+  background-repeat: no-repeat;
+}
+/*---------- Hadouken Positions ----------*/
+.hadouken {
+  background-image: url('../images/hadouken.gif');
+  position: absolute;
+  float: left;
+}
+/*---------- Logos ----------*/
+.logos {
+  position: absolute;
+  width: 600px;
+}
+.disney,
+.jquery,
+.street-fighter,
+.text,
+.text2 {
+  max-width: 100%;
+  max-height: 100%;
+  height: 500px;
+  width: 600px;
+  background-repeat: no-repeat;
+}
+.street-fighter {
+  background-image: url('../images/Street_Fighter_Logo.png');
+}
+.disney {
+  background-image: url('../images/disney.gif');
+}
+.jquery {
+  background-image: url('../images/jquery-logo.png');
+}
+@font-face {
+  src: url("../text/NewWalt1003.ttf") format("truetype");
+}
+@font-face {
+  src: url("../text/streetcred.ttf") format("truetype");
+}
+.text,
+.text2 {
+  color: Dodgerblue;
+}
+/*---------- Instructions for User ----------*/
+.caption-text {
+  float: left;
+}
+.caption-text ul {
+  list-style-type: none;
+}
+.one,
+.three,
+.two {
+  color: Dodgerblue;
+}
+/*# sourceMappingURL=jquery-streetfighter-less.1.0.0.css.map */

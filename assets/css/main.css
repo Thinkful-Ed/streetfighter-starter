@@ -1,13 +1,13 @@
-/* 
+/*
 #########################################
 
 	Table of Contents
-	
+
 	1) Parent Elements
 	2) Ryu Positions
 	3) Hadouken Positions
   4) Logos
-  5) Instructions for User  
+  5) Instructions for User
 
 #########################################
 */
@@ -19,7 +19,7 @@ body
 	background-color: black;
 }
 
-.main 
+.main
 {
   background-color: white;
   margin-top: 110px;
@@ -43,22 +43,23 @@ body
   height: 494px;
 }
 
-.ryu-ready, .ryu-throwing, .ryu-cool
+.ryu-ready, .ryu-throwing, .ryu-cool, .hadouken, .text,
+.text2, .disney, .jquery, .street-fighter, .one, .two, .three
 {
   display: none;
-} 
+}
 
-.ryu-ready 
+.ryu-ready
 {
   background-image: url('../images/ryu-ready-position.gif');
 }
 
-.ryu-still 
+.ryu-still
 {
   background-image: url('../images/ryu-standing-still.png');
 }
 
-.ryu-throwing 
+.ryu-throwing
 {
   background-image: url('../images/ryu-throwing-hadouken.png');
 }
@@ -68,24 +69,18 @@ body
   background-image: url('../images/ryu-cool.gif');
 }
 
-.ryu-cool
-{
-  display: none;
-}
-
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing,
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing
 {
   background-repeat: no-repeat;
 }
 
 /*---------- Hadouken Positions ----------*/
 
-.hadouken 
+.hadouken
 {
   background-image: url('../images/hadouken.gif');
-  width: 156px; 
+  width: 156px;
   height: 90px;
-  display: none;
   position: absolute;
   z-index: 10;
   top: 165px;
@@ -104,45 +99,34 @@ body
   padding-top: 75px;
 }
 
-.street-fighter
-{
-  background-image: url('../images/Street_Fighter_Logo.png');
+.text,
+.text2,
+.disney,
+.jquery,
+.street-fighter {
   max-width: 100%;
   max-height: 100%;
   height: 500px;
   width: 600px;
-  display: none;
   background-repeat: no-repeat;
-  margin-top: 50px;
+}
 
+.street-fighter
+{
+  background-image: url('../images/Street_Fighter_Logo.png');
 }
 
 .disney
 {
   background-image: url('../images/disney.gif');
-  max-width: 100%;
-  max-height: 100%;
-  height: 500px;
-  width: 600px;
-  display: none;
-  background-repeat: no-repeat;
-  margin-top: 50px;
 }
 
 .jquery
 {
   background-image: url('../images/jquery-logo.png');
-  max-width: 100%;
-  max-height: 100%;
-  height: 500px;
-  width: 600px;
-  display: none;
-  background-repeat: no-repeat;
-  margin-top: 50px;
-
 }
 
-@font-face 
+@font-face
 {
     font-family: "My Custom Font";
     src: url("../text/NewWalt1003.ttf") format("truetype");
@@ -154,39 +138,27 @@ body
     src: url("../text/streetcred.ttf") format("truetype");
 }
 
-.customfont 
-{ 
+.customfont
+{
     font-family: "My Custom Font", Verdana, Tahoma;
 }
 
-.customfont2 
-{ 
+.customfont2
+{
     font-family: "My Custom Font_2", Verdana, Tahoma;
+}
+
+.text, .text2
+{
+  font-size: 500%;
+  font-weight: bold;
+  color: Dodgerblue;
+  text-align: center;
 }
 
 .text
 {
-  height: 500px;
-  width: 600px;
-  display: none;
-  background-repeat: no-repeat;
-  font-size: 500%;
-  font-weight: bold;
-  color: Dodgerblue;
-  text-align: center;
-  margin-top: 100px;
-}
-
-.text2
-{
-  height: 500px;
-  width: 600px;
-  display: none;
-  background-repeat: no-repeat;
-  font-size: 500%;
-  font-weight: bold;
-  color: Dodgerblue;
-  text-align: center;
+	margin-top: 100px;
 }
 
 /*---------- Instructions for User ----------*/
@@ -204,27 +176,7 @@ body
 
 .one, .two, .three
 {
-  display: none;
   color: Dodgerblue;
   font-family: Georgia, Verdana;
   font-size: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
