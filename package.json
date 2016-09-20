@@ -4,21 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-
     "mkdir": "mkdir -p build",
     "build": "npm run clean && npm run mkdir && npm run build:html && npm run build:css",
     "watch": "npm run watch:html & npm run watch:css",
     "clean": "rm -rf build",
-
     "build:html": "npm run clean:html && cp index.html build/",
     "watch:html": "npm run build:html && chokidar index.html -c 'npm run build:html'",
     "clean:html": "rm -f build/index.html",
-
     "build:css": "npm run clean:css && lessc --source-map assets/css/styles.less build/$npm_package_name.$npm_package_version.css",
     "watch:css": "npm run build:css && chokidar 'assets/css/**/*.less' -c 'npm run build:css'",
     "clean:css": "rm -f build/$npm_package_name.$npm_package_version.css build/$npm_package_name.$npm_package_version.css.map"
-
-
   },
   "repository": {
     "type": "git",
@@ -33,6 +28,7 @@
   "devDependencies": {
     "chokidar-cli": "^1.2.0",
     "jquery": "^3.1.0",
-    "less": "^2.7.1"
+    "less": "^2.7.1",
+    "less-plugin-clean-css": "^1.5.1"
   }
 }
