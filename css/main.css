@@ -59,3 +59,9 @@ body {
 .hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
 	background-repeat: no-repeat; 
 }
+
+.instructions {
+	font-family: 'Bungee Inline', cursive;
+	font-size: 40px;
+	padding-top: 100px;
+}

@@ -50,16 +50,16 @@ function playHadouken () {
 	$('#hadouken-sound')[0].volume = 0.5;
 	$('#hadouken-sound')[0].load();
 	$('#hadouken-sound')[0].play();
-}
+};
 
 function playCoolMusic () {
 	$('#cool-music')[0].volume = 0.5;
 	$('#cool-music')[0].load();
 	$('#cool-music')[0].play();
-}
+};
 
 function playRyuTheme () {
 	$('#ryu-theme')[0].volume = 0.5;
 	$('#ryu-theme')[0].load();
 	$('#ryu-theme')[0].play();
-}
+};
