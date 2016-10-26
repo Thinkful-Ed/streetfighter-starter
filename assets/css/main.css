@@ -1,0 +1,182 @@
+/*
+#########################################
+
+	Table of Contents
+
+	1) Parent Elements
+	2) Ryu Positions
+	3) Hadouken Positions
+  4) Logos
+  5) Instructions for User
+
+#########################################
+*/
+
+/*---------- Parent Elements ----------*/
+
+body
+{
+	background-color: black;
+}
+
+.main
+{
+  background-color: white;
+  margin-top: 110px;
+  padding-left: 100px;
+  min-width: 1200px;
+  height: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+/*---------- Ryu Positions ----------*/
+
+.animation-container, .ryu
+{
+  float: left;
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool
+{
+  width: 659px;
+  height: 494px;
+}
+
+.ryu-ready, .ryu-throwing, .ryu-cool, .hadouken, .text,
+.text2, .disney, .jquery, .street-fighter, .one, .two, .three
+{
+  display: none;
+}
+
+.ryu-ready
+{
+  background-image: url('../images/ryu-ready-position.gif');
+}
+
+.ryu-still
+{
+  background-image: url('../images/ryu-standing-still.png');
+}
+
+.ryu-throwing
+{
+  background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.ryu-cool
+{
+  background-image: url('../images/ryu-cool.gif');
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing
+{
+  background-repeat: no-repeat;
+}
+
+/*---------- Hadouken Positions ----------*/
+
+.hadouken
+{
+  background-image: url('../images/hadouken.gif');
+  width: 156px;
+  height: 90px;
+  position: absolute;
+  z-index: 10;
+  top: 165px;
+  left: 699px;
+  float: left;
+}
+
+/*---------- Logos ----------*/
+
+.logos
+{
+  position: absolute;
+  left: 700px;
+  height: 425px;
+  width: 600px;
+  padding-top: 75px;
+}
+
+.text,
+.text2,
+.disney,
+.jquery,
+.street-fighter {
+  max-width: 100%;
+  max-height: 100%;
+  height: 500px;
+  width: 600px;
+  background-repeat: no-repeat;
+}
+
+.street-fighter
+{
+  background-image: url('../images/Street_Fighter_Logo.png');
+}
+
+.disney
+{
+  background-image: url('../images/disney.gif');
+}
+
+.jquery
+{
+  background-image: url('../images/jquery-logo.png');
+}
+
+@font-face
+{
+    font-family: "My Custom Font";
+    src: url("../text/NewWalt1003.ttf") format("truetype");
+}
+
+@font-face
+{
+    font-family: "My Custom Font_2";
+    src: url("../text/streetcred.ttf") format("truetype");
+}
+
+.customfont
+{
+    font-family: "My Custom Font", Verdana, Tahoma;
+}
+
+.customfont2
+{
+    font-family: "My Custom Font_2", Verdana, Tahoma;
+}
+
+.text, .text2
+{
+  font-size: 500%;
+  font-weight: bold;
+  color: Dodgerblue;
+  text-align: center;
+}
+
+.text
+{
+	margin-top: 100px;
+}
+
+/*---------- Instructions for User ----------*/
+
+.caption-text
+{
+  float: left;
+  padding-left: 100px;
+}
+
+.caption-text ul
+{
+  list-style-type: none;
+}
+
+.one, .two, .three
+{
+  color: Dodgerblue;
+  font-family: Georgia, Verdana;
+  font-size: 20px;
+}

@@ -1,0 +1,152 @@
+/*
+#########################################
+
+	Table of Contents
+  1) Imports
+  2) Variables
+	3) Parent Elements
+	4) Ryu Positions
+	5) Hadouken Positions
+  6) Logos
+  7) Instructions for User
+
+#########################################
+*/
+/*---------- Imports ----------*/
+@import (inline) 'assets/css/main.css';
+/*---------- Variables ----------*/
+@bodycolor: black;
+@maincolor: white;
+@fontcolor: Dodgerblue;
+@float_L: left;
+@pos_rel: relative;
+@pos_abs: absolute;
+@hidden: none;
+@no-repeat: no-repeat;
+@height: 500px;
+@width: 600px;
+@m_height: 100%;
+@m_width: 100%;
+@ryu-ready: url('../images/ryu-ready-position.gif');
+@ryu-still: url('../images/ryu-standing_still.png');
+@ryu-throwing: url('../images/ryu-throwing-hadouken.png');
+@ryu-cool: url('../images/ryu-cool.gif');
+@hadouken: url('../images/hadouken.gif');
+@street-fighter: url('../images/Street_Fighter_Logo.png');
+@disney: url('../images/disney.gif');
+@jquery: url('../images/jquery-logo.png');
+@Font1: url("../text/NewWalt1003.ttf") format("truetype");
+@Font2: url("../text/streetcred.ttf") format("truetype");
+/*---------- Parent Elements ----------*/
+body {
+    background-color: @bodycolor;
+}
+
+.main {
+    background-color: @maincolor;
+    height: @height;
+    position: @pos_rel;
+}
+/*---------- Ryu Positions ----------*/
+.animation-container,
+.ryu {
+    float: @float_L;
+}
+
+.disney,
+.hadouken,
+.jquery,
+.one,
+.ryu-cool,
+.ryu-ready,
+.ryu-throwing,
+.street-fighter,
+.text,
+.text2,
+.three,
+.two {
+    display: @hidden;
+}
+
+.ryu-ready {
+    background-image: @ryu-ready;
+}
+
+.ryu-still {
+    background-image: @ryu-still;
+}
+
+.ryu-throwing {
+    background-image: @ryu-throwing;
+}
+
+.ryu-cool {
+    background-image: @ryu-cool;
+}
+
+.hadouken,
+.ryu-ready,
+.ryu-still,
+.ryu-throwing {
+    background-repeat: @no-repeat;
+}
+/*---------- Hadouken Positions ----------*/
+.hadouken {
+    background-image: @hadouken;
+    position: @pos_abs;
+    float: @float_L;
+}
+/*---------- Logos ----------*/
+.logos {
+    position: @pos_abs;
+    width: @width;
+}
+
+.disney,
+.jquery,
+.street-fighter,
+.text,
+.text2 {
+    max-width: @m_width;
+    max-height: @m_height;
+    height: @height;
+    width: @width;
+    background-repeat: @no-repeat;
+}
+
+.street-fighter {
+    background-image: @street-fighter;
+}
+
+.disney {
+    background-image: @disney;
+}
+
+.jquery {
+    background-image: @jquery;
+}
+@font-face {
+    src: @Font1;
+}
+@font-face {
+    src: @Font2;
+}
+
+.text,
+.text2 {
+    color: @fontcolor;
+}
+/*---------- Instructions for User ----------*/
+.caption-text {
+    float: @float_L;
+
+    ul {
+        list-style-type: @hidden;
+    }
+}
+
+.one,
+.three,
+.two {
+    color: @fontcolor;
+}
