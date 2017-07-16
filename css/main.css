@@ -11,9 +11,16 @@ body{
   position: relative;
   z-index: 1;
 }
+.p-one p{
+	float: center;
+	min-width: 1200px;
+	padding-left: 620px;
+	
+}
 .ryu {
     width: 659px;
     height: 494px;
+    float: left;
 }
 
 .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
