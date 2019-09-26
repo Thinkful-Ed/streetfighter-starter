@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	//globalizing the key
+	var key = '0';
 	$('.ryu').mouseenter(function(){
 		$('.ryu-still').hide();
 		$('.ryu-ready').show();
@@ -26,7 +28,7 @@ $(document).ready(function(){
 		$('.ryu-ready').show();
 	})
 	$(document).keydown( function(event){
-		var key = (event.keyCode ? event.keyCode : event.which);
+		key = (event.keyCode ? event.keyCode : event.which);
 		if (key == '88')
 		{
 			$('.ryu-still').hide();
@@ -35,6 +37,13 @@ $(document).ready(function(){
 			$('.ryu-cool').show();
 		}
 	})
+	.keyup(function(){
+		if (key == '88') 
+		{
+			$('.ryu-cool').hide();
+			$('.ryu-still').show();
+		}
+	});
 });
 
 function playHadouken () {
