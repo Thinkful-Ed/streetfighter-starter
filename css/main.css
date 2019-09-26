@@ -80,3 +80,11 @@ body {
 	top:174px;
 	left:520px;
 }
+
+.instructions {
+
+	text-align: center;
+	padding-top: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
