@@ -1,14 +1,34 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title>Streetfighter</title>
+	<meta name="description" content="The Street Fighter Game made with jQuery to animate the charachter Ryuman with hadouken and sounds">
+
+	<title>Street Fighter</title>
+	
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+
 </head>
+
 <body>
-	
+	<div class="main">
+		<div class="ryu">
+			<div class="ryu-still"></div>
+			<div class="ryu-ready"></div>
+			<div class="ryu-throwing"></div>
+			<div class="ryu-cool"></div>
+		</div>
+		<div class="hadouken"></div>
+		<div class="instructions">
+			<h1>Click on Ryu to make him throw Hadouken</h1>
+			<h1>Press 'X' key to make him stand in cool pose</h1>
+		</div>
+	</div>
+	<audio id="hadouken-sound" src="sound/hadouken.mp3">
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
+
 </html>
